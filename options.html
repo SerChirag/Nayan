@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NayaN - Preferences</title>
+        <script src="material.js"></script>
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href="starter-template.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    </head>
+    <body>
+        <div class="section no-pad-bot" id="index-banner">
+            <h1 class="header center blue-text"><img src="logo.png" width="100" />NayaN</h1>
+            <div class="container">
+</div>
+            <h1 class="deep-orange-text center">&nbsp; Preferences</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+                <!--   Icon Section   -->
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">keyboard_voice</i></h2>
+                            <h5 class="center">Text-to-Speech</h5>
+                            <p class="light">Reads the relevent &nbsp;text from the web page and reads it out aloud. It also gives user a few options.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">color_lens</i></h2>
+                            <h5 class="center">For Colour Blind</h5>
+                        </div>
+                        <p class="light">Changes the colour of the webpage according to the users need.<br></p>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">zoom_in</i></h2>
+                            <h5 class="center">Zoom page</h5>
+                            <p class="light">Zooms the selected text by user for people having hypermetropic eye disorder and are not carrying their spectecles.</p>
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <h5><br>&nbsp;&nbsp;Which functionality you want to use?</h5>
+                    <table>
+                        <tr>
+                            <td> 
+                                <label class="mdl-radio mdl-js-radio" for="option1">
+                                    <input type="radio" id="option1" name="group" class="mdl-radio__button" checked>
+                                    <span class="mdl-radio__label black-text">Text-To-Speech</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option2">
+                                    <input type="radio" id="option2" name="group" class="mdl-radio__button">
+                                    <span class="mdl-radio__label black-text">Colour Blind</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="mdl-radio mdl-js-radio" for="option3">
+                                    <input type="radio" id="option3" name="group" class="mdl-radio__button">
+                                    <span class="mdl-radio__label black-text">Zoom Page</span>
+                                </label>                                 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="status"></div>
+                <button type="button" class="btn" id="save">Save</a>
+            </div>
+            <br>
+        </div>         
+        <!--  Scripts-->
+        <script src="materialize/js/materialize.js"></script>
+        <script src="options.js"></script>
+    </body>
+</html>

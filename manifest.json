@@ -1,0 +1,33 @@
+{
+  "name": "NayaN",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "A New Vision",
+  "icons": {
+    "16": "icons/logo2.png",
+    "48": "icons/logo2.png",
+    "128": "icons/logo2.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": "icons/logo2.png",
+    "default_title": "NayaN",
+    "default_popup": "popup1.html"
+  },
+  "permissions": [ "tabs", "storage"],
+  "omnibox": {
+    "keyword": "nayan"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*", "https://*/*"],
+      "js": ["inject.js"]
+    }
+  ]
+}
